@@ -1,12 +1,28 @@
-import { Stack } from "expo-router";
-import React from "react";
-
+import React from 'react';
+import { Tabs } from 'expo-router';
+import { Ionicons } from '@expo/vector-icons';
 
 export default function RootLayout() {
   return (
-    <Stack>
-      <Stack.Screen name="index" />
-      <Stack.Screen name="calculette" />
-    </Stack>
+    <Tabs>
+      <Tabs.Screen
+        name="index"
+        options={{
+          tabBarLabel: 'Accueil',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="home" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="calculette"
+        options={{
+          tabBarLabel: 'Calculatrice',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="calculator" color={color} size={size} />
+          ),
+        }}
+      />
+    </Tabs>
   );
 }
