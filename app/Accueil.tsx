@@ -18,7 +18,10 @@ export default function App() {
       <Text style={styles.description}>
         Garage404 est une école qui s’est donné pour mission d’enseigner le numérique à tous·tes à travers des parcours éducatifs pour les enfants, les ados et pour les adultes avec des formations métiers professionnalisantes.
       </Text>
-      <Link style={styles.button} href="/calculette">
+      <Link style={styles.button} href="/Calculatrice">
+        <Text style={styles.buttonText}>Calculatrice</Text>
+      </Link>
+      <Link style={styles.button} href="/Location">
         <Text style={styles.buttonText}>Calculatrice</Text>
       </Link>
     </View>

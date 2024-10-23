@@ -27,14 +27,20 @@ const Logo = () => {
             {menuVisible && (
                 <View style={styles.dropdown}>
                     <TouchableOpacity style={styles.menuItem}>
-                        <Link href="/">
+                        <Link href="/Accueil">
                             <Text>Accueil</Text>
                         </Link>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={styles.menuItem}>
-                        <Link href="/calculette">
+                        <Link href="/Calculatrice">
                             <Text>Calculatrice</Text>
+                        </Link>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity style={styles.menuItem}>
+                        <Link href="/Location">
+                            <Text>Location</Text>
                         </Link>
                     </TouchableOpacity>
                 </View>

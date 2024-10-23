@@ -100,7 +100,7 @@ const Calculator = () => {
     }
   };
 
-  const buttons = [
+    const buttons = [
     ['C', '±', '%', '/'],
     ['7', '8', '9', '*'],
     ['4', '5', '6', '-'],
